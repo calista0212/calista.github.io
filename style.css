@@ -1,0 +1,64 @@
+body {
+  background-image: url('assets/Castle2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: white
+}
+
+/* STYLE TEXT */
+h1 {
+  font-style: italic;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-align: center; 
+}
+
+h2 {
+  margin-top: 2em;
+  color: white;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  text-align: center;
+}
+
+/* STYLE FLEX CONTAINER */
+.question {
+  display: flex;
+  margin-top: 2em;
+  justify-content: center;
+}
+  
+/* STYLE FLEX ITEM */
+.answer-choice {
+  margin: 5px;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 10px;
+  text-align: center;
+}
+
+/* STYLE IMAGES */
+.answer-choice img {
+  height: 10em;
+  border-style: solid;
+  border-color: black;
+  border-width: 13px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* STYLE BUTTON */
+button { 
+  margin-top: 5px;
+  background-color: aliceblue 
+
+
+}
