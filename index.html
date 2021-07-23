@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Personality Quiz</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- import the webpage's stylesheet -->
+	<link rel="stylesheet" href="/style.css">
+
+	<!-- import the webpage's javascript file -->
+	<script src="/script.js" defer>
+
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<h1>Build a Cake and you'll find out your true Hogwarts House!</h1>
+	</header>
+
+	<main>
+
+		<h2> 1. What Flavor of Cake?</h2>
+		<div class="question">
+
+			<div class="answer-choice">
+				<img src="assets/Chocolate Cake.jpg" class="center">
+        <br>
+         <input type = "radio" name= "cake" id="q1a1" onclick="getHouse()">Chocolate Cake</button> 
+      </div>
+	
+      <div class="answer-choice">
+        <img src="assets/Vanilla Cake.jpg"class="center">
+        <br>
+         <input type = "radio" name= "cake" id="q1a2" onclick="getHouse()">Vanilla Cake</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Strawberry Cake.jpg" class="center">
+        <br>
+        <input type = "radio" name= "cake" id="q1a3" onclick="getHouse()">Strawberry Cake</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Lemon Cake.jpg" class="center">
+        <br>
+        <input type = "radio" name= "cake" id="q1a4" onclick="getHouse()">Lemon Cake</button>
+      </div>
+      
+    </div> 
+    
+    <h2> 2. How many Layers?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/one layer.jpg">
+        <br>
+        <input type = "radio" name= "layers" id="q2a1" onclick="getHouse()">One Layer</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/two layer.jpg">
+        <br>
+        <input type = "radio" name= "layers" id="q2a2" onclick="getHouse()">Two Layers</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Three layer cake.jpg">
+        <br>
+        <input type = "radio" name= "layers" id="q2a3" onclick="getHouse()">Three Layers</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/four layer cake.webp">
+        <br>
+        <input type = "radio" name= "layers" id="q2a4" onclick="getHouse()">Four Layers</button>
+      </div>
+
+    </div> 
+    
+    <h2> 3. What Frosting would you like?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/Chocolate Frosting.webp"> 
+        <br>
+        <input type = "radio" name= "frosting" id="q3a1" onclick="getHouse()">Chocolate Frosting</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Vanilla Frosting.webp">
+        <br>
+        <input type = "radio" name= "frosting" id="q3a2"onclick="getHouse()">Vanilla Frosting</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Strawberry Frosting.jpg">
+        <br>
+        <input type = "radio" name= "frosting" id="q3a3" onclick="getHouse()">Strawberry Frosting</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Cream Cheese Frosting.webp">
+        <br>
+        <input type = "radio" name= "frosting" id="q3a4" onclick="getHouse()">Cream Cheese Frosting</button>
+      </div>
+
+    </div> 
+
+    <h2> 4. What Topping would you like?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/Sprinkles.webp">
+        <br>
+        <input type = "radio" name= "topping" id="q4a1" onclick="getHouse()">Sprinkles</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Cherries.webp">
+        <br>
+        <input type = "radio" name= "topping" id="q4a2" onclick="getHouse()">Cherries</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Caramel.jpg">
+        <br>
+        <input type = "radio" name= "topping" id="q4a3" onclick="getHouse()">Caramel Drizzle</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Oreos.jpg">
+        <br>
+        <input type = "radio" name= "topping" id="q4a4" onclick="getHouse()">Oreos</button>
+      </div>
+
+    </div>
+
+      <h2> 5. Lastly, Who is this Cake for?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/Me.webp">
+        <br>
+        <input type = "radio" name= "lastly" id="q5a1" onclick="getHouse()">Me, duh</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Friends.webp">
+        <br>
+        <input type = "radio" name= "lastly" id="q5a2" onclick="getHouse()">My Friends</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Family.webp">
+        <br>
+        <input type = "radio" name= "lastly" id="q5a3" onclick="getHouse()">My Family</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/Relationship.jpg">
+        <br>
+        <input type = "radio" name= "lastly" id="q5a4" onclick="getHouse()">My Partner</button>
+      </div>
+
+    </div> 
+    
+<h2 id="result" >Your result is...</h2>
+
+    <button id="restart" onclick="resetButton()">Restart</button>
+  </main>
+  </body>
+</html>
